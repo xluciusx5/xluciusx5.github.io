@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucian Petrus - Network Security Architect and Cloud Engineer</title>
+<link rel="icon" type="image/png" href="https://www.solaceglobal.com/wp-content/uploads/2024/02/FTNT-745f92ba.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            background-image: url('https://images.spiceworks.com/wp-content/uploads/2022/09/23135451/representation-of-a-network-switch.jpg'),
+                              url('https://whitestack.com/wp-content/uploads/2023/03/Depositphotos_24812691_XLwebp-scaled-1-1024x768.webp'),
+                              url('https://assets.aboutamazon.com/dims4/default/f089fa5/2147483647/strip/false/crop/3000x1527+0+0/resize/1486x756!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F6b%2Fa8%2F69227a9e4d2ebe903733813896e1%2Fcgi-of-how-a-seaweed-farm-between-offshore-wind-turbines-could-look-from-above-the-ocean-smartland-2.jpg'),
+                              url('https://media.cnn.com/api/v1/images/stellar/prod/230927031258-01-north-sea-oil-rig-021323-file-restricted.jpg?c=original'),
+                              url('https://www.stena-drilling.com/wp-content/uploads/2020/07/Forth-menu.jpg');
+            background-size: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+            background-position: top left, top right, bottom left, bottom right;
+            background-repeat: no-repeat;
+            animation: changeBackground 20s infinite;
+        }
+
+        @keyframes changeBackground {
+            0% {
+                background-image: url('https://images.spiceworks.com/wp-content/uploads/2022/09/23135451/representation-of-a-network-switch.jpg'),
+                                  url('https://whitestack.com/wp-content/uploads/2023/03/Depositphotos_24812691_XLwebp-scaled-1-1024x768.webp'),
+                                  url('https://assets.aboutamazon.com/dims4/default/f089fa5/2147483647/strip/false/crop/3000x1527+0+0/resize/1486x756!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F6b%2Fa8%2F69227a9e4d2ebe903733813896e1%2Fcgi-of-how-a-seaweed-farm-between-offshore-wind-turbines-could-look-from-above-the-ocean-smartland-2.jpg'),
+                                  url('https://media.cnn.com/api/v1/images/stellar/prod/230927031258-01-north-sea-oil-rig-021323-file-restricted.jpg?c=original'),
+                                  url('https://www.stena-drilling.com/wp-content/uploads/2020/07/Forth-menu.jpg');
+            }
+            25% {
+                background-image: url('https://whitestack.com/wp-content/uploads/2023/03/Depositphotos_24812691_XLwebp-scaled-1-1024x768.webp'),
+                                  url('https://assets.aboutamazon.com/dims4/default/f089fa5/2147483647/strip/false/crop/3000x1527+0+0/resize/1486x756!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F6b%2Fa8%2F69227a9e4d2ebe903733813896e1%2Fcgi-of-how-a-seaweed-farm-between-offshore-wind-turbines-could-look-from-above-the-ocean-smartland-2.jpg'),
+                                  url('https://media.cnn.com/api/v1/images/stellar/prod/230927031258-01-north-sea-oil-rig-021323-file-restricted.jpg?c=original'),
+                                  url('https://images.spiceworks.com/wp-content/uploads/2022/09/23135451/representation-of-a-network-switch.jpg');
+            }
+            50% {
+                background-image: url('https://assets.aboutamazon.com/dims4/default/f089fa5/2147483647/strip/false/crop/3000x1527+0+0/resize/1486x756!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F6b%2Fa8%2F69227a9e4d2ebe903733813896e1%2Fcgi-of-how-a-seaweed-farm-between-offshore-wind-turbines-could-look-from-above-the-ocean-smartland-2.jpg'),
+                                  url('https://media.cnn.com/api/v1/images/stellar/prod/230927031258-01-north-sea-oil-rig-021323-file-restricted.jpg?c=original'),
+                                  url('https://images.spiceworks.com/wp-content/uploads/2022/09/23135451/representation-of-a-network-switch.jpg'),
+                                  url('https://whitestack.com/wp-content/uploads/2023/03/Depositphotos_24812691_XLwebp-scaled-1-1024x768.webp');
+            }
+            75% {
+                background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/230927031258-01-north-sea-oil-rig-021323-file-restricted.jpg?c=original'),
+                                  url('https://images.spiceworks.com/wp-content/uploads/2022/09/23135451/representation-of-a-network-switch.jpg'),
+                                  url('https://whitestack.com/wp-content/uploads/2023/03/Depositphotos_24812691_XLwebp-scaled-1-1024x768.webp'),
+                                  url('https://assets.aboutamazon.com/dims4/default/f089fa5/2147483647/strip/false/crop/3000x1527+0+0/resize/1486x756!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F6b%2Fa8%2F69227a9e4d2ebe903733813896e1%2Fcgi-of-how-a-seaweed-farm-between-offshore-wind-turbines-could-look-from-above-the-ocean-smartland-2.jpg');
+            }
+        }
+
+        .content {
+            position: relative;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background-color: rgba(26, 26, 26, 0.8);
+            box-shadow: 0 0 15px 5px rgba(0, 170, 255, 0.6);
+            z-index: 10;
+            margin: 0 auto; /* Center the content */
+            overflow-y: auto; /* Allow vertical scrolling */
+            max-height: 100vh; /* Ensure it fits within the viewport */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 3px solid #00aaff;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 10px; /* Adjust vertical position */
+        }
+
+        header .text-container {
+            text-align: right;
+            line-height: 1.4; /* Adjust vertical spacing */
+            position: relative;
+            top: 10px; /* Adjust vertical position */
+        }
+
+        header h1 {
+            color: #00aaff;
+            margin: 0;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header h2 {
+            color: #888;
+            margin: 0;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .section h2 {
+            color: #00aaff;
+            border-bottom: 1px solid #00aaff;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .contact-info a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .certifications {
+            margin-top: 20px;
+        }
+
+        .certifications img {
+            max-height: 75px;
+            margin: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .certifications img.cisco {
+            max-height: 150px; /* Increased size */
+        }
+
+        .certifications img.fortinet {
+            max-height: 112px; /* Increased size */
+        }
+
+        .who-i-work-with {
+            margin-top: 40px;
+            overflow: hidden; /* Prevent horizontal scroll */
+            white-space: nowrap; /* Ensure items are in a single line */
+            position: relative; /* Ensure positioning context for animation */
+            height: 120px; /* Adjust height to accommodate larger logos and title */
+        }
+
+        .who-i-work-with h2 {
+            margin: 0;
+            color: #00aaff;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #00aaff;
+        }
+
+        .who-i-work-with-wrapper {
+            display: flex;
+            animation: slide 30s linear infinite; /* Slower to match continuous sliding */
+        }
+
+        .who-i-work-with img {
+            max-height: 75px; /* Increased size */
+            margin: 0 15px; /* Space between logos */
+            display: inline-block;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <img src="https://media.licdn.com/dms/image/D4D03AQGkcf0qJKC_og/profile-displayphoto-shrink_200_200/0/1693584248127?e=1728518400&v=beta&t=SFEGo8i_kZ9b-2bFbCEzFGaoXLG2v32UpRibeMjJSWU" alt="Lucian Petrus">
+            <div class="text-container">
+                <h1>Lucian Petrus</h1>
+                <h2>Network Security Architect and Cloud Engineer</h2>
+            </div>
+        </header>
+        <div class="section" id="about-me">
+            <h2>About Me</h2>
+            <p>I'm Lucian and I’m super passionate about anything related to networks and software development!</p>
+            <p>I’m part and lead of multiple projects, as well as sports like fishing, skiing, football and rugby, which enabled me to be a key team player. I developed in a way which allows me to relate to problems in an objective manner, extrapolate the issue and come up with a solution in a timely manner + other coding& soft skills.</p>
+            <p>My freelance coding projects tackle real world problems, while bridging the cap between tech and old fashion labour. Most of my projects are made for mid-size companies or start-ups, so scalability is a must. By integrating this concept into numerous development processes, I am able to understand a client's future needs and come up with solutions applicable not only now, but in the future as well.</p>
+        </div>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <ul>
+                <li><strong>Project A:</strong> Description of Project A.</li>
+                <li><strong>Project B:</strong> Description of Project B.</li>
+                <li><strong>Project C:</strong> Description of Project C.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact-info">
+            <h2>Contact Information</h2>
+            <p>You can reach me at:</p>
+            <ul>
+                <li>Email: <a href="mailto:lucian.petrus@example.com">lucian.petrus@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/lucianpetrus" target="_blank">linkedin.com/in/lucianpetrus</a></li>
+                <li>GitHub: <a href="https://github.com/lucianpetrus" target="_blank">github.com/lucianpetrus</a></li>
+            </ul>
+        </div>
+        <div class="certifications">
+            <img src="https://www.careersmarter.com/wp-content/uploads/2023/10/CCNP-Badge.png" alt="Cisco CCNP Routing / Switching" class="cisco">
+            <img src="https://images.credly.com/images/7822016c-371e-45c9-9a99-4f5e28d1d0f0/linkedin_thumb_image.png" alt="Fortinet Certified Professional Network Security" class="fortinet">
+        </div>
+        <div class="who-i-work-with">
+            <h2>Who I Work With</h2>
+            <div class="who-i-work-with-wrapper">
+                <img src="https://seeklogo.com/images/S/shell-logo-25F8B6686F-seeklogo.com.png" alt="Shell">
+                <img src="https://eeegr.com/wp-content/uploads/2022/04/ASCO-Logo.png" alt="ASCO">
+                <img src="https://bluestonex.com/wp-content/uploads/2020/10/natswebsite.png" alt="NATS">
+                <img src="https://www.concawe.eu/wp-content/uploads/2017/01/Repsol-logo-logotype.png" alt="Repsol">
+                <img src="https://seeklogo.com/images/B/bilfinger-logo-03CAB2CC9B-seeklogo.com.png" alt="Bilfinger">
+                <img src="https://pbs.twimg.com/media/FQnH3jlWUAcvFHg.png" alt="Jacobs">
+<img src="https://seeklogo.com/images/P/petrofac-logo-0FE5906F0A-seeklogo.com.png">
+<img src="https://seeklogo.com/images/H/hibiscus-petroleum-logo-93C3D5A4DD-seeklogo.com.png">
+<img src="https://media.licdn.com/dms/image/D4E0BAQHBN_HMhfAABQ/company-logo_200_200/0/1688385257017/anasuria_operating_company_limited_logo?e=2147483647&v=beta&t=LW9n4paRWtrzU68GI6VtxvFvPfRRxnU27oP8vAde5eM">
+<img src="https://logowik.com/content/uploads/images/harbour-energy8016.jpg">
+<img src="https://www.cangroup.net/Portals/0/Images/CANGroupLogo.png?ver=O_heO8N3bQXDMMDz3-sE2Q%3D%3D">
+<img src="https://seeklogo.com/images/E/enermech-logo-054F06EBAB-seeklogo.com.png">
+                <img src="https://download.logo.wine/logo/Subsea_7/Subsea_7-Logo.wine.png" alt="Subsea 7">
+                <img src="https://purepng.com/public/uploads/large/purepng.com-lockheed-martin-logologobrand-logoiconslogos-251519939247joimv.png" alt="Lockheed Martin">
+                <!-- Duplicate for continuous effect -->
+                <img src="https://seeklogo.com/images/S/shell-logo-25F8B6686F-seeklogo.com.png" alt="Shell">
+                <img src="https://eeegr.com/wp-content/uploads/2022/04/ASCO-Logo.png" alt="ASCO">
+                <img src="https://bluestonex.com/wp-content/uploads/2020/10/natswebsite.png" alt="NATS">
+                <img src="https://www.concawe.eu/wp-content/uploads/2017/01/Repsol-logo-logotype.png" alt="Repsol">
+                <img src="https://seeklogo.com/images/B/bilfinger-logo-03CAB2CC9B-seeklogo.com.png" alt="Bilfinger">
+                <img src="https://pbs.twimg.com/media/FQnH3jlWUAcvFHg.png" alt="Jacobs">
+<img src="https://seeklogo.com/images/P/petrofac-logo-0FE5906F0A-seeklogo.com.png">
+<img src="https://seeklogo.com/images/H/hibiscus-petroleum-logo-93C3D5A4DD-seeklogo.com.png">
+<img src="https://media.licdn.com/dms/image/D4E0BAQHBN_HMhfAABQ/company-logo_200_200/0/1688385257017/anasuria_operating_company_limited_logo?e=2147483647&v=beta&t=LW9n4paRWtrzU68GI6VtxvFvPfRRxnU27oP8vAde5eM">
+<img src="https://logowik.com/content/uploads/images/harbour-energy8016.jpg">
+<img src="https://www.cangroup.net/Portals/0/Images/CANGroupLogo.png?ver=O_heO8N3bQXDMMDz3-sE2Q%3D%3D">
+<img src="https://seeklogo.com/images/E/enermech-logo-054F06EBAB-seeklogo.com.png">
+                <img src="https://download.logo.wine/logo/Subsea_7/Subsea_7-Logo.wine.png" alt="Subsea 7">
+                <img src="https://purepng.com/public/uploads/large/purepng.com-lockheed-martin-logologobrand-logoiconslogos-251519939247joimv.png" alt="Lockheed Martin">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
