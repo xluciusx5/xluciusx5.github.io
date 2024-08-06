@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucian Petrus - Network Security Architect and Cloud Engineer</title>
-<link rel="icon" type="image/png" href="https://www.solaceglobal.com/wp-content/uploads/2024/02/FTNT-745f92ba.png">
-
+    <link rel="icon" type="image/png" href="https://www.solaceglobal.com/wp-content/uploads/2024/02/FTNT-745f92ba.png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,6 +25,17 @@
             background-position: top left, top right, bottom left, bottom right;
             background-repeat: no-repeat;
             animation: changeBackground 20s infinite;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('https://png.pngtree.com/background/20230416/original/pngtree-website-blue-technology-line-background-picture-image_2443655.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: none; /* Disable background animation on mobile */
+            }
         }
 
         @keyframes changeBackground {
@@ -148,36 +158,39 @@
         }
 
         .who-i-work-with {
-            margin-top: 40px;
-            overflow: hidden; /* Prevent horizontal scroll */
-            white-space: nowrap; /* Ensure items are in a single line */
-            position: relative; /* Ensure positioning context for animation */
-            height: 120px; /* Adjust height to accommodate larger logos and title */
-        }
+    margin-top: 40px;
+    overflow: hidden; /* Prevent horizontal scroll */
+    white-space: nowrap; /* Ensure items are in a single line */
+    position: relative; /* Ensure positioning context for animation */
+    height: 120px; /* Adjust height to accommodate larger logos and title */
+    width: 100%; /* Ensure full width for mobile devices */
+}
 
-        .who-i-work-with h2 {
+.who-i-work-with h2 {
             margin: 0;
             color: #00aaff;
             padding-bottom: 10px;
             border-bottom: 1px solid #00aaff;
         }
 
-        .who-i-work-with-wrapper {
-            display: flex;
-            animation: slide 30s linear infinite; /* Slower to match continuous sliding */
-        }
+.who-i-work-with-wrapper {
+    display: flex;
+    width: 200%; /* Ensure enough width for continuous scrolling */
+    animation: slide 30s linear infinite; /* Slower to match continuous sliding */
+}
 
-        .who-i-work-with img {
-            max-height: 75px; /* Increased size */
-            margin: 0 15px; /* Space between logos */
-            display: inline-block;
-            animation: fadeIn 1s ease-in-out;
-        }
+.who-i-work-with img {
+    max-height: 75px; /* Adjust size */
+    margin: 0 15px; /* Space between logos */
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out;
+}
 
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
+/* Adjust keyframes if needed */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
 
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -193,7 +206,7 @@
             from { transform: translateY(50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
-    </style>
+</style>
 </head>
 <body>
     <div class="content">
@@ -234,39 +247,40 @@
             <img src="https://images.credly.com/images/7822016c-371e-45c9-9a99-4f5e28d1d0f0/linkedin_thumb_image.png" alt="Fortinet Certified Professional Network Security" class="fortinet">
         </div>
         <div class="who-i-work-with">
-            <h2>Who I Work With</h2>
-            <div class="who-i-work-with-wrapper">
-                <img src="https://seeklogo.com/images/S/shell-logo-25F8B6686F-seeklogo.com.png" alt="Shell">
-                <img src="https://eeegr.com/wp-content/uploads/2022/04/ASCO-Logo.png" alt="ASCO">
-                <img src="https://bluestonex.com/wp-content/uploads/2020/10/natswebsite.png" alt="NATS">
-                <img src="https://www.concawe.eu/wp-content/uploads/2017/01/Repsol-logo-logotype.png" alt="Repsol">
-                <img src="https://seeklogo.com/images/B/bilfinger-logo-03CAB2CC9B-seeklogo.com.png" alt="Bilfinger">
-                <img src="https://pbs.twimg.com/media/FQnH3jlWUAcvFHg.png" alt="Jacobs">
-<img src="https://seeklogo.com/images/P/petrofac-logo-0FE5906F0A-seeklogo.com.png">
-<img src="https://seeklogo.com/images/H/hibiscus-petroleum-logo-93C3D5A4DD-seeklogo.com.png">
-<img src="https://media.licdn.com/dms/image/D4E0BAQHBN_HMhfAABQ/company-logo_200_200/0/1688385257017/anasuria_operating_company_limited_logo?e=2147483647&v=beta&t=LW9n4paRWtrzU68GI6VtxvFvPfRRxnU27oP8vAde5eM">
-<img src="https://logowik.com/content/uploads/images/harbour-energy8016.jpg">
-<img src="https://www.cangroup.net/Portals/0/Images/CANGroupLogo.png?ver=O_heO8N3bQXDMMDz3-sE2Q%3D%3D">
-<img src="https://seeklogo.com/images/E/enermech-logo-054F06EBAB-seeklogo.com.png">
-                <img src="https://download.logo.wine/logo/Subsea_7/Subsea_7-Logo.wine.png" alt="Subsea 7">
-                <img src="https://purepng.com/public/uploads/large/purepng.com-lockheed-martin-logologobrand-logoiconslogos-251519939247joimv.png" alt="Lockheed Martin">
-                <!-- Duplicate for continuous effect -->
-                <img src="https://seeklogo.com/images/S/shell-logo-25F8B6686F-seeklogo.com.png" alt="Shell">
-                <img src="https://eeegr.com/wp-content/uploads/2022/04/ASCO-Logo.png" alt="ASCO">
-                <img src="https://bluestonex.com/wp-content/uploads/2020/10/natswebsite.png" alt="NATS">
-                <img src="https://www.concawe.eu/wp-content/uploads/2017/01/Repsol-logo-logotype.png" alt="Repsol">
-                <img src="https://seeklogo.com/images/B/bilfinger-logo-03CAB2CC9B-seeklogo.com.png" alt="Bilfinger">
-                <img src="https://pbs.twimg.com/media/FQnH3jlWUAcvFHg.png" alt="Jacobs">
-<img src="https://seeklogo.com/images/P/petrofac-logo-0FE5906F0A-seeklogo.com.png">
-<img src="https://seeklogo.com/images/H/hibiscus-petroleum-logo-93C3D5A4DD-seeklogo.com.png">
-<img src="https://media.licdn.com/dms/image/D4E0BAQHBN_HMhfAABQ/company-logo_200_200/0/1688385257017/anasuria_operating_company_limited_logo?e=2147483647&v=beta&t=LW9n4paRWtrzU68GI6VtxvFvPfRRxnU27oP8vAde5eM">
-<img src="https://logowik.com/content/uploads/images/harbour-energy8016.jpg">
-<img src="https://www.cangroup.net/Portals/0/Images/CANGroupLogo.png?ver=O_heO8N3bQXDMMDz3-sE2Q%3D%3D">
-<img src="https://seeklogo.com/images/E/enermech-logo-054F06EBAB-seeklogo.com.png">
-                <img src="https://download.logo.wine/logo/Subsea_7/Subsea_7-Logo.wine.png" alt="Subsea 7">
-                <img src="https://purepng.com/public/uploads/large/purepng.com-lockheed-martin-logologobrand-logoiconslogos-251519939247joimv.png" alt="Lockheed Martin">
-            </div>
-        </div>
+    <h2>Who I Work With</h2>
+    <div class="who-i-work-with-wrapper">
+        <!-- Add duplicates of logos here -->
+        <img src="https://seeklogo.com/images/S/shell-logo-25F8B6686F-seeklogo.com.png" alt="Shell">
+        <img src="https://eeegr.com/wp-content/uploads/2022/04/ASCO-Logo.png" alt="ASCO">
+        <img src="https://bluestonex.com/wp-content/uploads/2020/10/natswebsite.png" alt="NATS">
+        <img src="https://www.concawe.eu/wp-content/uploads/2017/01/Repsol-logo-logotype.png" alt="Repsol">
+        <img src="https://seeklogo.com/images/B/bilfinger-logo-03CAB2CC9B-seeklogo.com.png" alt="Bilfinger">
+        <img src="https://pbs.twimg.com/media/FQnH3jlWUAcvFHg.png" alt="Jacobs">
+        <img src="https://seeklogo.com/images/P/petrofac-logo-0FE5906F0A-seeklogo.com.png">
+        <img src="https://seeklogo.com/images/H/hibiscus-petroleum-logo-93C3D5A4DD-seeklogo.com.png">
+        <img src="https://media.licdn.com/dms/image/D4E0BAQHBN_HMhfAABQ/company-logo_200_200/0/1688385257017/anasuria_operating_company_limited_logo?e=2147483647&v=beta&t=LW9n4paRWtrzU68GI6VtxvFvPfRRxnU27oP8vAde5eM">
+        <img src="https://logowik.com/content/uploads/images/harbour-energy8016.jpg">
+        <img src="https://www.cangroup.net/Portals/0/Images/CANGroupLogo.png?ver=O_heO8N3bQXDMMDz3-sE2Q%3D%3D">
+        <img src="https://seeklogo.com/images/E/enermech-logo-054F06EBAB-seeklogo.com.png">
+        <img src="https://download.logo.wine/logo/Subsea_7/Subsea_7-Logo.wine.png" alt="Subsea 7">
+        <img src="https://purepng.com/public/uploads/large/purepng.com-lockheed-martin-logologobrand-logoiconslogos-251519939247joimv.png" alt="Lockheed Martin">
+        <!-- Duplicate for continuous effect -->
+        <img src="https://seeklogo.com/images/S/shell-logo-25F8B6686F-seeklogo.com.png" alt="Shell">
+        <img src="https://eeegr.com/wp-content/uploads/2022/04/ASCO-Logo.png" alt="ASCO">
+        <img src="https://bluestonex.com/wp-content/uploads/2020/10/natswebsite.png" alt="NATS">
+        <img src="https://www.concawe.eu/wp-content/uploads/2017/01/Repsol-logo-logotype.png" alt="Repsol">
+        <img src="https://seeklogo.com/images/B/bilfinger-logo-03CAB2CC9B-seeklogo.com.png" alt="Bilfinger">
+        <img src="https://pbs.twimg.com/media/FQnH3jlWUAcvFHg.png" alt="Jacobs">
+        <img src="https://seeklogo.com/images/P/petrofac-logo-0FE5906F0A-seeklogo.com.png">
+        <img src="https://seeklogo.com/images/H/hibiscus-petroleum-logo-93C3D5A4DD-seeklogo.com.png">
+        <img src="https://media.licdn.com/dms/image/D4E0BAQHBN_HMhfAABQ/company-logo_200_200/0/1688385257017/anasuria_operating_company_limited_logo?e=2147483647&v=beta&t=LW9n4paRWtrzU68GI6VtxvFvPfRRxnU27oP8vAde5eM">
+        <img src="https://logowik.com/content/uploads/images/harbour-energy8016.jpg">
+        <img src="https://www.cangroup.net/Portals/0/Images/CANGroupLogo.png?ver=O_heO8N3bQXDMMDz3-sE2Q%3D%3D">
+        <img src="https://seeklogo.com/images/E/enermech-logo-054F06EBAB-seeklogo.com.png">
+        <img src="https://download.logo.wine/logo/Subsea_7/Subsea_7-Logo.wine.png" alt="Subsea 7">
+        <img src="https://purepng.com/public/uploads/large/purepng.com-lockheed-martin-logologobrand-logoiconslogos-251519939247joimv.png" alt="Lockheed Martin">
+    </div>
+</div>
     </div>
 </body>
 </html>
